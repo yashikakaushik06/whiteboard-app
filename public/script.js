@@ -20,7 +20,7 @@ let isEraser = false;
 let dataChannel;
 
 // Connection to local server
-const socket = io("http://localhost:8080");
+const socket = io(); // Connect to the same host
 
 // ---------- UI Interaction Logic ----------
 

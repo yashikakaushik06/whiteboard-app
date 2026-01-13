@@ -37,7 +37,7 @@ server.on('error', (err) => {
   console.error('Server Error:', err);
 });
 
-const PORT = 8080; // Hardcoded to match your client-side 127.0.0.1:8080
+const PORT = process.env.PORT || 8080; // Use environment port for deployment
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Whiteboard Server running at http://localhost:${PORT}`);
 });
