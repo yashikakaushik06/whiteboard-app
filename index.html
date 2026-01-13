@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+     
+  </head>
+  <body>
+   
+    <h1 class="main-heading">Whiteboard</h1>
+    <canvas id="canvas"></canvas>
+
+    <video id="test" autoplay playsinline></video>
+
+    <div class="toolbar">
+      <input type="color" id="colorPicker" value="#000000" title="Pick Brush Color">
+      
+      <input type="range" id="sizeSlider" min="1" max="50" value="5" title="Brush Size">
+      
+      <button id="drawBtn" class="tool-btn active">Brush</button>
+      <button id="eraserBtn" class="tool-btn">Eraser</button>
+      <button id="clearBtn" class="tool-btn">Clear All</button>
+
+      <div style="color: rgba(255,255,255,0.5); font-size: 10px; margin-left: 10px;">
+        Press Enter to Connect
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
